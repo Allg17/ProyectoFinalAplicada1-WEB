@@ -66,7 +66,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap-grid.css.map" />
+    <Content Include="Content\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="Content\css\bootstrap.min.css.map" />
+    <Content Include="Content\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\js\bootstrap.js.map" />
+    <Content Include="Content\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
+    <Content Include="UI\Registros\Master Page\Diseño.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,7 +86,77 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap-grid.css" />
+    <Content Include="Content\css\bootstrap-grid.min.css" />
+    <Content Include="Content\css\bootstrap-reboot.css" />
+    <Content Include="Content\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\js\bootstrap.bundle.js" />
+    <Content Include="Content\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\js\toastr.js" />
     <Content Include="Global.asax" />
+    <Content Include="icons\0icons8_Error.ico" />
+    <Content Include="icons\0icons8_Error_32.png" />
+    <Content Include="icons\contact-center-ventas.jpg" />
+    <Content Include="icons\icons8_Add_New.ico" />
+    <Content Include="icons\icons8_Add_New_16.png" />
+    <Content Include="icons\icons8_Add_New_32.png" />
+    <Content Include="icons\icons8_Bill.ico" />
+    <Content Include="icons\icons8_Bill_16.png" />
+    <Content Include="icons\icons8_Brief.ico" />
+    <Content Include="icons\icons8_Brief_32.png" />
+    <Content Include="icons\icons8_Bulleted_List.ico" />
+    <Content Include="icons\icons8_Bulleted_List_16.png" />
+    <Content Include="icons\icons8_Category.ico" />
+    <Content Include="icons\icons8_Category_16.png" />
+    <Content Include="icons\icons8_Customer.ico" />
+    <Content Include="icons\icons8_Customer_16.png" />
+    <Content Include="icons\icons8_Custosmer.ico" />
+    <Content Include="icons\icons8_Custosmer_32.png" />
+    <Content Include="icons\icons8_Database32_Import.ico" />
+    <Content Include="icons\icons8_Database32_Import_32.png" />
+    <Content Include="icons\icons8_Database_Import.ico" />
+    <Content Include="icons\icons8_Database_Import_48.png" />
+    <Content Include="icons\icons8_Delete_File.ico" />
+    <Content Include="icons\icons8_Delete_File_32.png" />
+    <Content Include="icons\icons8_Error.ico" />
+    <Content Include="icons\icons8_Error1.ico" />
+    <Content Include="icons\icons8_Error1_16.png" />
+    <Content Include="icons\icons8_Error1_32.png" />
+    <Content Include="icons\icons8_Error_32.png" />
+    <Content Include="icons\icons8_Land_Sales.ico" />
+    <Content Include="icons\icons8_Land_Sales_16.png" />
+    <Content Include="icons\icons8_Land_Sales_32.png" />
+    <Content Include="icons\icons8_Login.ico" />
+    <Content Include="icons\icons8_Login_32.png" />
+    <Content Include="icons\icons8_Login_Rounded_Up.ico" />
+    <Content Include="icons\icons8_Login_Rounded_Up_32.png" />
+    <Content Include="icons\icons8_Message.ico" />
+    <Content Include="icons\icons8_Message_16.png" />
+    <Content Include="icons\icons8_Print.ico" />
+    <Content Include="icons\icons8_Print_32.png" />
+    <Content Include="icons\icons8_Product.ico" />
+    <Content Include="icons\icons8_Product_16.png" />
+    <Content Include="icons\icons8_Report_Card.ico" />
+    <Content Include="icons\icons8_Report_Card32.ico" />
+    <Content Include="icons\icons8_Report_Card32_32.png" />
+    <Content Include="icons\icons8_Report_Card_16.png" />
+    <Content Include="icons\icons8_Save.ico" />
+    <Content Include="icons\icons8_Save_32.png" />
+    <Content Include="icons\icons8_Search.ico" />
+    <Content Include="icons\icons8_Search_16.png" />
+    <Content Include="icons\icons8_Shutdown.ico" />
+    <Content Include="icons\icons8_Shutdown_32.png" />
+    <Content Include="icons\icons8_Sign_Up.ico" />
+    <Content Include="icons\icons8_Sign_Up_32.png" />
+    <Content Include="UI\Registros\Login.aspx" />
+    <Content Include="UI\Registros\Rarticulos.aspx" />
+    <Content Include="UI\Registros\rEntradaArticulo.aspx" />
+    <Content Include="UI\Registros\Rusuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +164,41 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Registros\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Master Page\Diseño.Master.cs">
+      <DependentUpon>Diseño.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Master Page\Diseño.Master.designer.cs">
+      <DependentUpon>Diseño.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Rarticulos.aspx.cs">
+      <DependentUpon>Rarticulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Rarticulos.aspx.designer.cs">
+      <DependentUpon>Rarticulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rEntradaArticulo.aspx.cs">
+      <DependentUpon>rEntradaArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rEntradaArticulo.aspx.designer.cs">
+      <DependentUpon>rEntradaArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Rusuarios.aspx.cs">
+      <DependentUpon>Rusuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Rusuarios.aspx.designer.cs">
+      <DependentUpon>Rusuarios.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
