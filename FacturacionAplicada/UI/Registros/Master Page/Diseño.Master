@@ -12,7 +12,8 @@
         h1 {
             font-size: large;
             font-family: 'Times New Roman', Times, serif;
-            font: bold
+            font: bold;
+            color: red;
         }
 
         a {
@@ -33,17 +34,17 @@
     <form id="Menuform" runat="server">
         <div>
 
-
-
-
             <div class="container-fluid">
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-2">
-                        <img style="float: right;" src="../../../icons/contact-center-ventas.jpg" width="150" height="150" id="imagen" />
+                        <a href="/UI/Registros/Menu.aspx">
+                            <img style="float: right;" src="../../../icons/contact-center-ventas.jpg" alt="Logo Oficial de el sistema no se pudo cargar." title="+Ventas. Clic para ir al menu" width="150" height="150" id="imagen" /></a>
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4 offset-lg-3 ">
-                        <h1 class="display-4">Facturacion</h1>
+                        <a href="/UI/Registros/Menu.aspx" title="Clic para ir al Menu">
+                            <h1 class="display-4">Facturacion</h1>
+                        </a>
                     </div>
                 </div>
 
@@ -71,7 +72,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/UI/Registros/Rarticulos.aspx">Articulos</a>
                                 <a class="dropdown-item" href="/UI/Registros/rEntradaArticulo.aspx">Entrada Articulos</a>
-                                <a class="dropdown-item" href="#">Departamento</a>
+                                <a class="dropdown-item" href="/UI/Registros/Rdepartamento.aspx">Departamento</a>
 
                             </div>
                         </li>
@@ -118,7 +119,7 @@
     <br />
 
     <footer>
-        <div class="bg-primary form-control" style="font-size: large; font-family: 'Times New Roman', Times, serif; font: bold">
+        <div class=" bg-danger form-control" style="font-size: large; font-family: 'Times New Roman', Times, serif; font: bold">
             <p class="text-center text-white">Albert Lopez Garcia. "+Ventas".</p>
         </div>
     </footer>

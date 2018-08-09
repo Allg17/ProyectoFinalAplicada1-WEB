@@ -154,7 +154,10 @@
     <Content Include="icons\icons8_Sign_Up.ico" />
     <Content Include="icons\icons8_Sign_Up_32.png" />
     <Content Include="UI\Registros\Login.aspx" />
+    <Content Include="UI\Registros\Menu.aspx" />
     <Content Include="UI\Registros\Rarticulos.aspx" />
+    <Content Include="UI\Registros\Rclientes.aspx" />
+    <Content Include="UI\Registros\Rdepartamento.aspx" />
     <Content Include="UI\Registros\rEntradaArticulo.aspx" />
     <Content Include="UI\Registros\Rusuarios.aspx" />
     <Content Include="Web.config" />
@@ -178,12 +181,33 @@
     <Compile Include="UI\Registros\Master Page\Diseño.Master.designer.cs">
       <DependentUpon>Diseño.Master</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\Rarticulos.aspx.cs">
       <DependentUpon>Rarticulos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI\Registros\Rarticulos.aspx.designer.cs">
       <DependentUpon>Rarticulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Rclientes.aspx.cs">
+      <DependentUpon>Rclientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Rclientes.aspx.designer.cs">
+      <DependentUpon>Rclientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Rdepartamento.aspx.cs">
+      <DependentUpon>Rdepartamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Rdepartamento.aspx.designer.cs">
+      <DependentUpon>Rdepartamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\rEntradaArticulo.aspx.cs">
       <DependentUpon>rEntradaArticulo.aspx</DependentUpon>
