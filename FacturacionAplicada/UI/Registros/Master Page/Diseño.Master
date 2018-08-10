@@ -13,7 +13,7 @@
             font-size: large;
             font-family: 'Times New Roman', Times, serif;
             font: bold;
-            color: red;
+            color: red; 
         }
 
         a {
@@ -27,21 +27,33 @@
             font-family: 'Times New Roman', Times, serif;
             font: bold
         }
+
+        /*#footer {
+            width: 100%;
+            height: 200px;
+            background: #333;
+            border-top: 2px solid #000;
+            position: absolute;
+            bottom: 0;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font: bold
+        }*/
     </style>
 </head>
 
 <body>
-    <form id="Menuform" runat="server">
+    <form id="form" runat="server">
         <div>
 
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-2">
+                    <div class=" col-sm-4 col-md-3 ">
                         <a href="/UI/Registros/Menu.aspx">
                             <img style="float: right;" src="../../../icons/contact-center-ventas.jpg" alt="Logo Oficial de el sistema no se pudo cargar." title="+Ventas. Clic para ir al menu" width="150" height="150" id="imagen" /></a>
                     </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4 offset-lg-3 ">
+                    <div class="col-sm-4 col-md-7 offset-md-2  ">
                         <a href="/UI/Registros/Menu.aspx" title="Clic para ir al Menu">
                             <h1 class="display-4">Facturacion</h1>
                         </a>
@@ -50,8 +62,11 @@
 
             </div>
 
-
+            <%--  <div class="container">--%>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
 
@@ -60,9 +75,10 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/UI/Registros/Rusuarios.aspx">Usuarios</a>
-                                <a class="dropdown-item" href="#">Clientes</a>
+                                <a class="dropdown-item" href="/UI/Registros/Rclientes.aspx">Clientes</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Cerrar Sesion</a>
+
                             </div>
                         </li>
 
@@ -80,7 +96,7 @@
                             <a class="navbar-brand dropdown-toggle" href="#" id="DespachoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Despacho
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Facturacion</a>
+                                <a class="dropdown-item" href="/UI/Registros/Rfacturacion.aspx">Facturacion</a>
 
 
                             </div>
@@ -106,6 +122,7 @@
 
                 </div>
             </nav>
+            <%--</div>--%>
 
             <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -119,10 +136,11 @@
     <br />
 
     <footer>
-        <div class=" bg-danger form-control" style="font-size: large; font-family: 'Times New Roman', Times, serif; font: bold">
+        <div class=" bg-danger form-control">
             <p class="text-center text-white">Albert Lopez Garcia. "+Ventas".</p>
         </div>
     </footer>
+
     <script src="../../../Content/js/jquery-3.3.1.min.js"></script>
     <script src="../../../Content/js/bootstrap.bundle.min.js"></script>
     <script src="../../../Content/js/bootstrap.js"></script>

@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -72,6 +78,7 @@
     <Content Include="Content\css\bootstrap-reboot.min.css.map" />
     <Content Include="Content\css\bootstrap.css.map" />
     <Content Include="Content\css\bootstrap.min.css.map" />
+    <Content Include="Content\css\Personal.css" />
     <Content Include="Content\js\bootstrap.bundle.js.map" />
     <Content Include="Content\js\bootstrap.bundle.min.js.map" />
     <Content Include="Content\js\bootstrap.js.map" />
@@ -158,11 +165,26 @@
     <Content Include="UI\Registros\Rarticulos.aspx" />
     <Content Include="UI\Registros\Rclientes.aspx" />
     <Content Include="UI\Registros\Rdepartamento.aspx" />
-    <Content Include="UI\Registros\rEntradaArticulo.aspx" />
+    <Content Include="UI\Registros\RentradaArticulo.aspx" />
+    <Content Include="UI\Registros\Rfacturacion.aspx" />
     <Content Include="UI\Registros\Rusuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ClienteBLL.cs" />
+    <Compile Include="BLL\DepartamentoBLL.cs" />
+    <Compile Include="BLL\FacturacionBLL.cs" />
+    <Compile Include="BLL\FacturaDetalleBLL.cs" />
+    <Compile Include="BLL\ProductoBLL.cs" />
+    <Compile Include="BLL\UsuarioBLL.cs" />
+    <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Departamento.cs" />
+    <Compile Include="Entidades\EntradaArticulo.cs" />
+    <Compile Include="Entidades\Factura.cs" />
+    <Compile Include="Entidades\FacturaDetalle.cs" />
+    <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -209,12 +231,19 @@
     <Compile Include="UI\Registros\Rdepartamento.aspx.designer.cs">
       <DependentUpon>Rdepartamento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Registros\rEntradaArticulo.aspx.cs">
-      <DependentUpon>rEntradaArticulo.aspx</DependentUpon>
+    <Compile Include="UI\Registros\RentradaArticulo.aspx.cs">
+      <DependentUpon>RentradaArticulo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Registros\rEntradaArticulo.aspx.designer.cs">
-      <DependentUpon>rEntradaArticulo.aspx</DependentUpon>
+    <Compile Include="UI\Registros\RentradaArticulo.aspx.designer.cs">
+      <DependentUpon>RentradaArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Rfacturacion.aspx.cs">
+      <DependentUpon>Rfacturacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Rfacturacion.aspx.designer.cs">
+      <DependentUpon>Rfacturacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\Rusuarios.aspx.cs">
       <DependentUpon>Rusuarios.aspx</DependentUpon>

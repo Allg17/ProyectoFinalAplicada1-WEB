@@ -46,7 +46,7 @@
         </div>
         <br />
         <div class="row">
-            <div class="offset-md-3 col-sm-8 col-md-2 ">
+            <div class="col-7  offset-md-3 col-sm-4 col-md-2 ">
                 <asp:CheckBox ID="ContraseñaCheckBox" runat="server" Text=" ver Contraseña" CssClass="form-control" />
             </div>
         </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/Registros/Master Page/Diseño.Master" AutoEventWireup="true" CodeBehind="rEntradaArticulo.aspx.cs" Inherits="FacturacionAplicada.UI.Registros.rEntradaArticulo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/Registros/Master Page/Diseño.Master" AutoEventWireup="true" CodeBehind="RentradaArticulo.aspx.cs" Inherits="FacturacionAplicada.UI.Registros.rEntradaArticulo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
